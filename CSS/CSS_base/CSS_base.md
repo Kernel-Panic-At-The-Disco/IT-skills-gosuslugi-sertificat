@@ -1,103 +1,153 @@
-# **CSS CSS**
+# CSS_base
 
-Этот документ содержит вопросы и варианты ответов по CSS, извлеченные из предоставленных изображений. Формат Markdown подходит для загрузки на Git.
-
-**1 из 10**
-
+## Вопрос 1
 Какой селектор выбирает все элементы на странице?
 
-1. \*  
-2. all  
-3. select\[all\]  
-4. \*\*  
-5. @all
+- *
+- all
+- select[all]
+- **
+- @all
 
-**2 из 10**
+---
 
+## Вопрос 2
 Выберите вариант, в котором селекторы расположены в порядке увеличения их приоритета.
 
-1. span, \#header, .btn  
-2. .btn, \#header, span  
-3. .btn, span, \#header  
-4. span, .btn, \#header  
-5. \#header, .btn, span
+- span, #header, .btn
+- .btn, #header, span
+- .btn, span, #header
+- span, .btn, #header
+- #header, .btn, span
 
-**3 из 10**
+---
 
-Какой из перечисленных селекторов используется для применения стилей ко всем элементам параграфов (\<p\>), которые находятся внутри элемента с классом content?
+## Вопрос 3
+Какой из перечисленных селекторов используется для применения стилей ко всем элементам параграфов (<p>), которые находятся внутри элемента с классом content?
 
-1. \#content p  
-2. .content p  
-3. .content \> p  
-4. p .content  
-5. p \> .content
+- #content p
+- .content p
+- .content > p
+- p .content
+- p > .content
 
-**4 из 10**
+---
 
+## Вопрос 4
 Выберите вариант ответа, в котором содержатся только наследуемые свойства.
 
-1. z-index, top, left  
-2. font-size, text-align, color  
-3. display, position, float  
-4. margin, padding, border  
-5. background-color, width, height
+- z-index, top, left
+- font-size, text-align, color
+- display, position, float
+- margin, padding, border
+- background-color, width, height
 
-**5 из 10**
+---
 
+## Вопрос 5
 Какой способ отменяет наследование, и назначает значение по умолчанию процесса каскадирования?
 
-1. Применить transform: none  
-2. Добавить правило \!important к наследуемому свойству  
-3. Использовать свойство all: inherit  
-4. Установить display: initial  
-5. Задать значение unset для свойства
+- Применить transform: none
+- Добавить правило !important к наследуемому свойству
+- Использовать свойство all: inherit
+- Установить display: initial
+- Задать значение unset для свойства
 
-**6 из 10**
+---
 
+## Вопрос 6
 Как упростить стилизацию дочерних элементов без явного определения их свойств?
 
-1. Вынести стили в отдельные файлы, а не писать в одном  
-2. Использовать селектор \*  
-3. Использовать вложенные и комбинированные селекторы  
-4. Использовать наследуемые свойства  
-5. Использовать \!important
+- Вынести стили в отдельные файлы, а не писать в одном
+- Использовать селектор *
+- Использовать вложенные и комбинированные селекторы
+- Использовать наследуемые свойства
+- Использовать !important
 
-**7 из 10**
+---
 
+## Вопрос 7
 Какие HTML-элементы по умолчанию имеют display: inline-block?
 
-1. table, tr, td, th, caption  
-2. div, p, h1, section, article  
-3. ul, ol, li, dl, dt  
-4. a, span, em, strong, b  
-5. img, button, input, select, textarea
+- table, tr, td, th, caption
+- div, p, h1, section, article
+- ul, ol, li, dl, dt
+- a, span, em, strong, b
+- img, button, input, select, textarea
 
-**8 из 10**
+---
 
+## Вопрос 8
 Как сделать элемент строчно-блочным (inline-block) с учётом его размеров?
 
-1. position: fixed  
-2. float: left  
-3. box-sizing: content-box  
-4. width: auto  
-5. display: inline-block
+- position: fixed
+- float: left
+- box-sizing: content-box
+- width: auto
+- display: inline-block
 
-**9 из 10**
+---
 
+## Вопрос 9
 Какой тег используется для подключения стиля из файла style.css напрямую в HTML-файл?
 
-1. use  
-2. style  
-3. import  
-4. connect  
-5. link
+- use
+- style
+- import
+- connect
+- link
 
-**10 из 10**
+---
 
+## Вопрос 10
 Какой стиль смещает элемент вправо на всю ширину его родителя?
 
-1. left: 100%  
-2. margin-left: 100%  
-3. padding-left: 100%  
-4. width: 100%  
-5. transform: translateX(100%)
+- left: 100%
+- margin-left: 100%
+- padding-left: 100%
+- width: 100%
+- transform: translateX(100%)
+
+---
+
+## Вопрос 11
+Какой селектор используется для выбора элемента по его id (main)?
+
+- main#
+- #main
+- id(main)
+- #(main)
+- main[id]
+
+---
+
+## Вопрос 12
+Какой селектор применит стили ко всем `<li>` элементам, являющимся непосредственными детьми `<ul>` с классом `menu`?
+
+- ul.menu > li
+- .menu li > ul
+- li > ul.menu
+- .menu > ul li
+- ul.menu li
+
+---
+
+## Вопрос 13
+Какой из способов позволяет надежно предотвратить схлопывание нижнего margin дочернего элемента с верхним margin родительского элемента, не нарушая структуру потока?
+
+- Добавить padding-top родительскому элементу
+- Назначить display: inline дочернему элементу
+- Применить position: absolute к дочернему элементу
+- Добавить border-top родителю
+- Задать дочернему элементу margin-bottom: 0
+
+---
+
+## Вопрос 14
+Какой директивой можно импортировать один CSS файл в другой?
+
+- @include
+- @link
+- @use
+- @css
+- @import

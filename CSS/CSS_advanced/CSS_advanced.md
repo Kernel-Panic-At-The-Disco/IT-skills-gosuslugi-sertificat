@@ -1,182 +1,334 @@
-# **CSS\_advanced**
+## CSS_advanced
 
-**Вопрос 1**
-
+## Вопрос 1
 Как выбрать все \<span\>, находящиеся внутри элементов с двумя классами одновременно: .f и .g?
 
-1 \<div class="f g"\>  
-2   \<span class="x"\>Text\</span\>  
-3 \</div\>  
-4 \<div class="f"\>  
-5   \<span class="g"\>Another\</span\>  
+1 \<div class="f g"\>
+2   \<span class="x"\>Text\</span\>
+3 \</div\>
+4 \<div class="f"\>
+5   \<span class="g"\>Another\</span\>
 6 \</div\>
 
-1. span.f.g  
-2. .f .g span  
-3. span\[class\*=".f-g"\]  
-4. .f.g span  
-5. f+g span
+- span.f.g
+- .f .g span
+- span\[class\*=".f-g"\]
+- .f.g span
+- f+g span
 
-**Вопрос 2**
+---
 
+## Вопрос 2
 Как правильно переопределить только text-align для всех дочерних элементов внутри .container, при этом сохранив остальные наследуемые свойства?
 
-1. .container \* { all: inherit; }  
-2. .container \* { text-align: initial; }  
-3. .container \* { text-align: inherit; }  
-4. .container \* { text-align: none; }  
-5. .container \> \* { direction: inherit; }
+- .container \* { all: inherit; }
+- .container \* { text-align: initial; }
+- .container \* { text-align: inherit; }
+- .container \* { text-align: none; }
+- .container \> \* { direction: inherit; }
 
-**Вопрос 3**
+---
 
+## Вопрос 3
 Как обеспечить, чтобы элемент с заданными width: 100px и padding: 20px занимал ровно 100px по ширине в макете?
 
-1. Установить overflow: hidden;  
-2. Применить box-sizing: border-box;  
-3. Назначить margin: \-20px;  
-4. Прописать width: auto;  
-5. Использовать display: inline;
+- Установить overflow: hidden;
+- Применить box-sizing: border-box;
+- Назначить margin: \-20px;
+- Прописать width: auto;
+- Использовать display: inline;
 
-**Вопрос 4**
+---
 
+## Вопрос 4
 Когда оптимально использовать встроенные (inline) стили в HTML?
 
-1. Когда проект полностью построен на CSS-модулях и PostCSS  
-2. Когда необходимо обеспечить переиспользуемость стилей в рамках всего проекта  
-3. Когда нужно задать уникальные стили для одного конкретного элемента без повторного использования  
-4. Когда стили должны быть централизованно изменяемы из единого файла  
-5. Когда стили должны применяться только после загрузки всех шрифтов
+- Когда проект полностью построен на CSS-модулях и PostCSS
+- Когда необходимо обеспечить переиспользуемость стилей в рамках всего проекта
+- Когда нужно задать уникальные стили для одного конкретного элемента без повторного использования
+- Когда стили должны быть централизованно изменяемы из единого файла
+- Когда стили должны применяться только после загрузки всех шрифтов
 
-**Вопрос 5**
+---
 
+## Вопрос 5
 Как повлиять на vh высоту секции, если на мобильных устройствах часть viewport скрыта (например, адресная строка)?
 
-1. Использовать высоту в px и добавить overflow: auto  
-2. Использовать min-height: 100% к \<body\> и \<html\>  
-3. Использовать dvh вместо vh  
-4. Использовать calc(100vh \- 50px) без учёта видимой области  
-5. Использовать max-height: 100vh и padding: 10vh
+- Использовать высоту в px и добавить overflow: auto
+- Использовать min-height: 100% к \<body\> и \<html\>
+- Использовать dvh вместо vh
+- Использовать calc(100vh \- 50px) без учёта видимой области
+- Использовать max-height: 100vh и padding: 10vh
 
-**Вопрос 6**
+---
 
+## Вопрос 6
 Как сделать так, чтобы один из трёх элементов занял всё оставшееся пространство в строке, а остальные были фиксированной ширины?
 
-1. Использовать display: flex и задать нужному элементу flex-grow: 1  
-2. Использовать position: absolute для растягиваемого элемента  
-3. Применить flex-basis: 100% ко всем элементам  
-4. Использовать display: grid с фиксированной шириной колонок  
-5. Применить display: flex; justify-content: space-between
+- Использовать display: flex и задать нужному элементу flex-grow: 1
+- Использовать position: absolute для растягиваемого элемента
+- Применить flex-basis: 100% ко всем элементам
+- Использовать display: grid с фиксированной шириной колонок
+- Применить display: flex; justify-content: space-between
 
-**Вопрос 7**
+---
 
+## Вопрос 7
 Какая комбинация осей используется Flexbox для размещения элементов?
 
-1. Основная и вспомогательная ось  
-2. Только горизонтальная ось  
-3. Статическая и абсолютная ось  
-4. Левый и правый поток  
-5. Верхняя и нижняя ось
+- Основная и вспомогательная ось
+- Только горизонтальная ось
+- Статическая и абсолютная ось
+- Левый и правый поток
+- Верхняя и нижняя ось
 
-**Вопрос 8**
+---
 
+## Вопрос 8
 Как с помощью CSS добавить звездочку после обязательного поля формы без изменения HTML?
 
-1. Добавить required:after  
-2. Применить :not(optional)  
-3. Использовать ::before без content  
-4. Использовать ::after c content: "\*"  
-5. Задать outline с текстом
+- Добавить required:after
+- Применить :not(optional)
+- Использовать ::before без content
+- Использовать ::after c content: "\*"
+- Задать outline с текстом
 
-**Вопрос 9**
+---
 
+## Вопрос 9
 Какой селектор применит стили ко всем кнопкам, кроме тех, у которых установлен класс .primary и которые находятся в фокусе?
 
-1. button:not(.primary):not(:focus)  
-2. button:not(:focus).primary  
-3. button:is(:not(.primary), :not(:focus))  
-4. button:focus:not(.primary)  
-5. button:not(.primary:focus)
+- button:not(.primary):not(:focus)
+- button:not(:focus).primary
+- button:is(:not(.primary), :not(:focus))
+- button:focus:not(.primary)
+- button:not(.primary:focus)
 
-**Вопрос 10**
+---
 
+## Вопрос 10
 Как реализовать плавное изменение фона при наведении на элемент с задержкой запуска эффекта?
 
-1. element:hover { transition: background-color 0.5s ease 0.3s; }  
-2. element { transition-delay: background-color 0.3s; }  
-3. element:hover { animation: changeBg 0.5s ease 0.3s; }  
-4. element:hover { transition: 0.5s ease 0.3s background; }  
-5. element { background-transition: delay 0.3s, duration 0.5s; }
+- element:hover { transition: background-color 0.5s ease 0.3s; }
+- element { transition-delay: background-color 0.3s; }
+- element:hover { animation: changeBg 0.5s ease 0.3s; }
+- element:hover { transition: 0.5s ease 0.3s background; }
+- element { background-transition: delay 0.3s, duration 0.5s; }
 
-**Вопрос 11**
+---
 
+## Вопрос 11
 Как реализовать 3D-анимацию переворота карточки по оси X при наведении курсора с сохранением перспективы родительского контейнера?
 
-1. Применить perspective(1000px) и transform: rotateZ(180deg)  
-2. Задать transform: scaleZ(2) и backface-visibility: hidden  
-3. Использовать transform: skewY(180deg) без дополнительных параметров  
-4. Задать transform: rotateX(180deg) и perspective на карточке  
-5. Применить transform-style: flat и rotateY(180deg) к карточке
+- Применить perspective(1000px) и transform: rotateZ(180deg)
+- Задать transform: scaleZ(2) и backface-visibility: hidden
+- Использовать transform: skewY(180deg) без дополнительных параметров
+- Задать transform: rotateX(180deg) и perspective на карточке
+- Применить transform-style: flat и rotateY(180deg) к карточке
 
-**Вопрос 12**
+---
 
+## Вопрос 12
 Какой метод позиционирования наиболее затратный по производительности при прокрутке страницы?
 
-1. position: relative  
-2. position: static  
-3. display: block  
-4. display: flex  
-5. position: sticky
+- position: relative
+- position: static
+- display: block
+- display: flex
+- position: sticky
 
-**Вопрос 13**
+---
 
+## Вопрос 13
 Какой из селекторов имеет наибольшую специфичность?
 
 1 \<div class="item active" id="unique"\>\</div\>
 
-1. div\#unique  
-2. div.item  
-3. .item.active  
-4. .active\#unique  
-5. \#unique
+- div\#unique
+- div.item
+- .item.active
+- .active\#unique
+- \#unique
 
-**Вопрос 14**
+---
 
+## Вопрос 14
 Как сделать так, чтобы изображение внутри контейнера сохраняло пропорции, заполняло весь контейнер по ширине и не выходило за его границы?
 
-1 \<style\>  
-2   .container {  
-3     width: 100%;  
-4     max-width: 600px;  
-5     aspect-ratio: 16/9;  
-6     overflow: hidden;  
-7   }  
-8 \</style\>  
-9 \<div class="container"\>  
-10   \<img src="image.jpg" class="img" /\>  
+1 \<style\>
+2   .container {
+3     width: 100%;
+4     max-width: 600px;
+5     aspect-ratio: 16/9;
+6     overflow: hidden;
+7   }
+8 \</style\>
+9 \<div class="container"\>
+10   \<img src="image.jpg" class="img" /\>
 11 \</div\>
 
-1. .img { height: 100%; width: auto; object-fit: none; }  
-2. .img { flex: 1; min-width: 0; }  
-3. .img { object-fit: cover; width: 200%; }  
-4. .img { position: absolute; top: 0; left: 0; }  
-5. .img { width: 100%; height: auto; object-fit: contain; }
+- .img { height: 100%; width: auto; object-fit: none; }
+- .img { flex: 1; min-width: 0; }
+- .img { object-fit: cover; width: 200%; }
+- .img { position: absolute; top: 0; left: 0; }
+- .img { width: 100%; height: auto; object-fit: contain; }
 
-**Вопрос 15**
+---
 
+## Вопрос 15
 Что произойдет с .card, если ширина экрана уменьшится до 991px?
 
-1 .card {  
-2   width: 1000px;  
-3   transition: width 0.3s ease;  
-4 }  
-5 @media (max-width: 992px) {  
-6   .card {  
-7     width: 100%;  
-8   }  
+1 .card {
+2   width: 1000px;
+3   transition: width 0.3s ease;
+4 }
+5 @media (max-width: 992px) {
+6   .card {
+7     width: 100%;
+8   }
 9 }
 
-1. Карточка анимировано сожмется до ширины экрана  
-2. Карточка исчезнет  
-3. Карточка будет уменьшаться пропорционально  
-4. Карточка будет обрезана  
-5. Карточка останется шириной 1000px
+- Карточка анимировано сожмется до ширины экрана
+- Карточка исчезнет
+- Карточка будет уменьшаться пропорционально
+- Карточка будет обрезана
+- Карточка останется шириной 1000px
+
+---
+
+## Вопрос 16
+Как выбрать только те элементы \<p\>, которые находятся непосредственно внутри \<div class="f"\>?
+
+1 \<div class="a"\>
+2   \<div class="b"\>
+3     \<p class="c"\>Text\</p\>
+4   \</div\>
+5   \<div class="d"\>
+6     \<p class="e"\>Text\</p\>
+7   \</div\>
+8   \<div class="f"\>
+9     \<span class="g"\>Text\</span\>
+10  \</div\>
+11 \</div\>
+
+- .d p
+- .d > p
+- div > .e
+- div > .e > p
+- div.d > .e
+
+---
+
+## Вопрос 17
+Как избавиться от лишнего отступа между inline-block элементами, размещенными в одной строке?
+
+- Добавить overflow: hidden родителю блока
+- Прописать родителю display: flex с обнулением
+- Установить vertical-align: top на блоки
+- Применить margin: \-x на элементы
+- Удалить пробелы между тегами в HTML разметке
+
+---
+
+## Вопрос 18
+В каком случае предпочтительно использовать тег \<style\> внутри секции \<head\>?
+
+- Когда необходимо обеспечить максимальную производительность за счёт кэширования
+- Когда проект использует SCSS и CSS должен быть скомпилирован на лету
+- Когда все стили хранятся во внешнем CDN и не требуют локальное хранение
+- Когда стили специфичны для данной страницы и не предполагаются их повторное использование
+- Когда важна полная изоляция компонентов в SPA приложении
+
+---
+
+## Вопрос 19
+Как задать фиксированную ширину поля ввода ровно 30 символов среднего размера?
+
+- Использовать width: 30ex
+- Использовать min-width: 30ch
+- Использовать max-width: 30em
+- Использовать width: 30ch
+- Использовать width: 30em
+
+---
+
+## Вопрос 20
+Как равномерно распределить три блока по ширине контейнера с отступами между ними в Flexbox?
+
+- Использовать display: flex и gap: auto
+- Использовать display: flex; justify-content: center и margin
+- Применить display: flex; justify-content: space-between
+- Использовать display: align-items: stretch
+- Назначить width: 33.3% каждому элементу без flex-контейнера
+
+---
+
+## Вопрос 21
+Что произойдёт с Flex-элементами при нехватке места в контейнере с flex-wrap: nowrap ?
+
+- Элементы исчезнут, если не вмещаются полностью
+- Элементы автоматически перейдут на новую строку
+- Контейнер изменит свой размер, чтобы вместить все элементы
+- Элементы выйдут за пределы контейнера и могут наложиться
+- Flexbox автоматически уменьшит размеры элементов
+
+---
+
+## Вопрос 22
+Как изменить фон инпута при фокусе пользователя?
+
+- Использовать селектор :focus
+- Применить :checked к инпуту
+- Применить ::before + opacity
+- Использовать :visited + bg
+- Указать :hover::after
+
+---
+
+## Вопрос 23
+Какой селектор применяется, если элемент \<h2\> — единственный элемент такого типа внутри своего родителя, независимо от других элементов?
+
+- h2:only-child
+- h2:only-of-type
+- h2:first-of-type
+- h2:last-child
+- h2:nth-of-type(1)
+
+---
+
+## Вопрос 24
+Как реализовать функцию reduce motion для выключения всех анимаций и переходов на странице, используя @keyframes и CSS?
+
+- { transition-delay: 0 !important; animation: none; }
+- { transition-timing-function: ease; animation: none; }
+- { transition-duration: 0 !important; animation: none !important; }
+- { transition-property: none; animation: none !important; }
+- { transition-duration: 0 !important; animation: none !important; }
+
+---
+
+## Вопрос 25
+Какой селектор будет переопределен при конфликте?
+
+`a <a href="#" class="link" id="mainLink"></a>`
+
+- .link#mainLink
+- \#mainLink
+- a#mainLink
+- .link
+- a.link
+
+---
+
+## Вопрос 26
+Какой способ позволяет задать размер шрифта, который будет адаптироваться в зависимости от ширины экрана без медиа-запросов?
+
+1 .title {
+2   font-size: ???;
+3 }
+
+- font-size: clamp(1rem, 2vw, 2.5rem)
+- font-size: 16px
+- font-size: calc(1rem + 1px)
+- font-size: 1rem
+- font-size: var(--font-lg)

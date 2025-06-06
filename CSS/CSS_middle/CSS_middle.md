@@ -1,156 +1,276 @@
-# **CSS\_middle**
+# CSS_middle
 
-**Вопрос 1**
+## Вопрос 1
+Какой из этих селекторов позволяет выбрать все элементы <li>, которые идут сразу после любого <h2>?
 
-Какой из этих селекторов позволяет выбрать все элементы \<li\>, которые идут сразу после любого \<h2\>?
+- h2 ~ li
+- li + h2
+- li > h2
+- h2 > li
+- h2 + li
 
-1. h2 \~ li  
-2. li \+ h2  
-3. li \> h2  
-4. h2 \> li  
-5. h2 \+ li
+---
 
-**Вопрос 2**
+## Вопрос 2
+Как задать стили всем параграфам <p>, находящимся внутри любого элемента с атрибутом data-section?
 
-Как задать стили всем параграфам \<p\>, находящимся внутри любого элемента с атрибутом data-section?
+- [data-section-p] p
+- [data-section] + p
+- .data-section p
+- [data-section] > p
+- [data-section] p
 
-1. \[data-section-p\] p  
-2. \[data-section\] \+ p  
-3. .data-section p  
-4. \[data-section\] \> p  
-5. \[data-section\] p
+---
 
-**Вопрос 3**
-
+## Вопрос 3
 Выберите вариант ответа, в котором содержатся только ненаследуемые свойства.
 
-1. visibility, text-align, direction  
-2. font-family, font-size, letter-spacing  
-3. color, word-spacing, text-decoration  
-4. box-shadow, opacity, overflow  
-5. list-style-type, white-space, font-style
+- visibility, text-align, direction
+- font-family, font-size, letter-spacing
+- color, word-spacing, text-decoration
+- box-shadow, opacity, overflow
+- list-style-type, white-space, font-style
 
-**Вопрос 4**
+---
 
+## Вопрос 4
 Как задать шрифт на странице, чтобы можно было его быстро переопределить или заменить во всех местах сразу?
 
-1. Записать font-свойства в универсальный селектор \*  
-2. Применять font-свойства к каждому элементу через классы  
-3. Переопределять для всех элементов font-свойства через \!important  
-4. Подключать шрифты через Google Fonts и задавать их для каждого блока  
-5. Использовать CSS-переменные для задания шрифта
+- Записать font-свойства в универсальный селектор *
+- Применять font-свойства к каждому элементу через классы
+- Переопределять для всех элементов font-свойства через !important
+- Подключать шрифты через Google Fonts и задавать их для каждого блока
+- Использовать CSS-переменные для задания шрифта
 
-**Вопрос 5**
+---
 
+## Вопрос 5
 Какой тег по умолчанию является строчным (inline) элементом?
 
-1. \<a\>  
-2. \<ul\>  
-3. \<section\>  
-4. \<div\>  
-5. \<article\>
+- <a>
+- <ul>
+- <section>
+- <div>
+- <article>
 
-**Вопрос 6**
+---
 
-Какой способ подключения CSS может замедлить рендеринг из\-за блокировки обработки HTML?
+## Вопрос 6
+Какой способ подключения CSS может замедлить рендеринг из-за блокировки обработки HTML?
 
-1. \<link\> с media="print"  
-2. Инлайновые стили  
-3. Использование системных шрифтов  
-4. @import в CSS-файле  
-5. Асинхронная загрузка через preload
+- <link> с media="print"
+- Инлайновые стили
+- Использование системных шрифтов
+- @import в CSS-файле
+- Асинхронная загрузка через preload
 
-**Вопрос 7**
+---
 
+## Вопрос 7
 Как сделать размер внутреннего отступа кнопки зависимым от размера шрифта внутри этой кнопки?
 
-1. Указывать padding в em  
-2. Указывать padding в rem  
-3. Указывать padding в пикселях  
-4. Задать высоту и ширину кнопки в %  
-5. Указывать padding в vw
+- Указывать padding в em
+- Указывать padding в rem
+- Указывать padding в пикселях
+- Задать высоту и ширину кнопки в %
+- Указывать padding в vw
 
-**Вопрос 8**
+---
 
+## Вопрос 8
 Что произойдет с элементами, если размер экрана будет уменьшаться?
 
-\<style\>  
-  .card {  
-    display: flex;  
-  }  
-  .center {  
-    flex-grow: 1;  
-  }  
-  .left,  
-  .right {  
-    flex-basis: 300px;  
-  }  
-\</style\>  
-\<body\>  
-  \<div class="card"\>  
-    \<div class="left"\>left\</div\>  
-    \<div class="center"\>center\</div\>  
-    \<div class="right"\>right\</div\>  
-  \</div\>  
-\</body\>
+<style>
+  .card {
+    display: flex;
+  }
+  .center {
+    flex-grow: 1;
+  }
+  .left,
+  .right {
+    flex-basis: 300px;
+  }
+</style>
+<body>
+  <div class="card">
+    <div class="left">left</div>
+    <div class="center">center</div>
+    <div class="right">right</div>
+  </div>
+</body>
 
-1. center будет оставаться фиксированным, left и right будут сжиматься  
-2. Сначала будут уменьшаться left и right, затем center  
-3. Сначала будет уменьшаться center, затем left и right  
-4. Ни один элемент не изменит размера из\-за фиксированной ширины.  
-5. Все три элемента уменьшатся одновременно
+- center будет оставаться фиксированным, left и right будут сжиматься
+- Сначала будут уменьшаться left и right, затем center
+- Сначала будет уменьшаться center, затем left и right
+- Ни один элемент не изменит размера из-за фиксированной ширины
+- Все три элемента уменьшатся одновременно
 
-**Вопрос 9**
+---
 
+## Вопрос 9
 Какое свойство Flexbox отвечает за перенос элементов на следующую строку, если они не помещаются по ширине?
 
-1. align-content  
-2. order  
-3. flex-wrap  
-4. overflow  
-5. justify-content
+- align-content
+- order
+- flex-wrap
+- overflow
+- justify-content
 
-**Вопрос 10**
+---
 
+## Вопрос 10
 Как можно запретить одному элементу сжиматься, если не хватает места в контейнере?
 
-\<div class="bar" style="display: flex;"\>  
-  \<div class="title"\>Заголовок\</div\>  
-  \<div class="actions"\>Кнопки\</div\>  
-\</div\>
+<div class="bar" style="display: flex;">
+  <div class="title">Заголовок</div>
+  <div class="actions">Кнопки</div>
+</div>
 
-1. Добавить bar justify-content: space-between  
-2. Добавить actions flex-basis: auto  
-3. Добавить title flex-shrink: 0  
-4. Добавить title min-width: auto  
-5. Добавить actions flex-grow: 2
+- Добавить bar justify-content: space-between
+- Добавить actions flex-basis: auto
+- Добавить title flex-shrink: 0
+- Добавить title min-width: auto
+- Добавить actions flex-grow: 2
 
-**Вопрос 11**
+---
 
+## Вопрос 11
 Что делает псевдокласс :nth-child(2n)?
 
-1. Выбирает только второй элемент  
-2. Применяет стиль ко второму элементу в любом контейнере  
-3. Применяет стиль ко всем четным элементам  
-4. Применяет стиль ко всем потомкам с четным индексом  
-5. Выбирает все элементы, кроме второго
+- Выбирает только второй элемент
+- Применяет стиль ко второму элементу в любом контейнере
+- Применяет стиль ко всем четным элементам
+- Применяет стиль ко всем потомкам с четным индексом
+- Выбирает все элементы, кроме второго
 
-**Вопрос 12**
+---
 
+## Вопрос 12
 Какой псевдокласс позволяет применить стили только к последнему элементу в списке?
 
-1. li:last-child  
-2. li::after  
-3. ul:last-of-type  
-4. li:nth-of-type(n)  
-5. li:only-child
+- li:last-child
+- li::after
+- ul:last-of-type
+- li:nth-of-type(n)
+- li:only-child
 
-**Вопрос 13**
+---
 
+## Вопрос 13
 Какой способ позволяет воспроизводить CSS-анимацию в обратном порядке?
 
-1. Использовать transition-direction: reverse  
-2. Установить animation: invert 1s linear  
-3. Установить animation-direction: reverse  
-4. Задать animation-flow: back  
-5. Применить animation-rotate: 180deg
+- Использовать transition-direction: reverse
+- Установить animation: invert 1s linear
+- Установить animation-direction: reverse
+- Задать animation-flow: back
+- Применить animation-rotate: 180deg
+
+---
+
+## Вопрос 14
+Какой тип селектора используется для выбора элементов на основе атрибута?
+
+- ::attribute
+- element::attribute
+- [attribute]
+- .attribute
+- #attribute
+
+---
+
+## Вопрос 15
+Как выбрать все элементы внутри div с id=container?
+
+- #container
+- #container *
+- .container *
+- #container:all
+- .container +
+
+---
+
+## Вопрос 16
+Какой способ позволяет задать базовый размер шрифта, от которого будут зависеть все размеры в rem?
+
+- Настроить font-size через селектор *
+- Установить font-size на html
+- Установить font-size на body
+- Использовать переменную в каждом блоке
+- Применить inline-стили с rem
+
+---
+
+## Вопрос 17
+Как задать высоту блока так, чтобы она равнялась 50% от высоты родителя?
+
+- height: 50em
+- height: 50vh
+- height: 50mm
+- height: 50px
+- height: 50rem
+
+---
+
+## Вопрос 18
+Что происходит с элементами, если их общее содержимое больше ширины контейнера?
+
+<style>
+  .container {
+    display: flex;
+    width: 400px;
+  }
+  .item {
+    width: 300px;
+  }
+</style>
+<body>
+  <div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+  </div>
+</body>
+
+- Один из элементов будет обрезан по содержимому
+- Элементы перейдут на следующую строку
+- Контейнер увеличится по ширине, чтобы вместить оба элемента
+- Один из элементов исчезнет из-за нехватки места
+- Элементы начнут сжиматься, чтобы уместиться в одну строку
+
+---
+
+## Вопрос 19
+Как можно прижать logo к левому краю, а links — к правому?
+
+<div class="parent" style="display: flex;">
+  <div class="logo"></div>
+  <div class="links"></div>
+</div>
+
+- Задать links align-items: center
+- Задать logo flex: 1
+- Задать parent justify-content: stretch
+- Задать logo min-width: max-content
+- Задать parent min-width: max-content
+
+---
+
+## Вопрос 20
+Для чего чаще всего используется псевдоэлемент ::after в CSS?
+
+- Для ограничения количества символов отображаемого текста
+- Для отображения текста по умолчанию внутри поля ввода
+- Для добавления новой строки перед основным заголовком
+- Для создания копии родительского блока в потоке страницы
+- Для вставки содержимого после основного контента элемента
+
+---
+
+## Вопрос 21
+Какой псевдокласс следует использовать, чтобы изменить стиль ссылки при ее активации?
+
+- :active
+- :hover
+- ::before
+- :checked
+- :visited
