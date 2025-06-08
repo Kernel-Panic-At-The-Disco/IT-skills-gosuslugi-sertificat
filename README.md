@@ -17,7 +17,7 @@
 - [Вопросы по Функциональному Тестированию](/Func_test)
 - [Вопросы по Git](/Git)
 - [Вопросы по Javascript](/JS)
-- [Вопросы по Java](/JAVA)
+- [Вопросы по Java](/Java)
 - [Вопросы по Linux](/Linux)
 - [Вопросы по OOP](/OOP)
 - [Вопросы по PostgreSQL](/PostgreSQL)
