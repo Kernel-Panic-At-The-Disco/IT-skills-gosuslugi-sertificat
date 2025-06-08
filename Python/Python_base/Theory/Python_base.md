@@ -184,14 +184,15 @@ result = 2 * [1] + [2]
 
 ## Вопрос 15
 Что происходит в результате выполнения следующего кода?
-
-```i = 0
+```
+i = 0
 result = 0
 while (result < 10):
     result += 1
     if result == 4: continue
     if result % 2 == 0: result += 2
-    if result == 9: break```
+    if result == 9: break
+```
 
 - В переменной result будет храниться 9
 - В переменной result будет храниться 10
