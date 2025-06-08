@@ -1,4 +1,4 @@
-# **Python\_advanced**
+# Python_advanced
 
 ## **Вопрос 1**
 
