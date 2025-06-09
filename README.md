@@ -20,6 +20,7 @@
 - [Вопросы по Java](/Java)
 - [Вопросы по Linux](/Linux)
 - [Вопросы по OOP](/OOP)
+- [Вопросы по PHP](/PHP)
 - [Вопросы по PostgreSQL](/PostgreSQL)
 - [Вопросы по Python](/Python)
 - [Вопросы по Регрессионному тестированию](/Reg_test)
