@@ -132,31 +132,31 @@
 ## Вопрос 10
 Вы создаёте список ссылок в футере. Какой подход минимизирует DOM-сложность и сохраняет семантику?
 
-- <div>
+- `<div>
        <div><a href="/privacy">Политика</a></div>
        <div><a href="/terms">Условия</a></div>
-   </div>
-- <footer>
+   </div>`
+- `<footer>
        <p><a href="/privacy">Политика</a></p>
        <p><a href="/terms">Условия</a></p>
-   </footer>
-- <ul>
+   </footer>`
+- `<ul>
        <div>
            <li>
                <a href="/privacy">Политика</a>
            </li>
        </div>
-   </ul>
-- <nav>
+   </ul>`
+- `<nav>
        <ul>
            <li><a href="/privacy">Политика</a></li>
            <li><a href="/terms">Условия</a></li>
        </ul>
-   </nav>
-- <nav>
+   </nav>`
+- `<nav>
        <a href="/privacy">Политика</a> |
        <a href="/terms">Условия</a>
-   </nav>
+   </nav>`
 
 ---
 
@@ -172,7 +172,7 @@
 ---
 
 ## Вопрос 12
-Как изменение структуры с 10 одинаковых вложенных блоков <div> на один блок со списком <ul><li> повлияет на рендеринг?
+Как изменение структуры с 10 одинаковых вложенных блоков `<div>` на один блок со списком `<ul><li>` повлияет на рендеринг?
 
 - Не повлияет, т.к. все элементы одинаковы по визуальному весу
 - Увеличит количество DOM-узлов и замедлит рендеринг
@@ -185,22 +185,22 @@
 ## Вопрос 13
 Какой из следующих фрагментов не валиден с точки зрения синтаксиса custom elements?
 
-- <product-card></product-card>
-- <my-component></my-component>
-- <custom-input></custom-input>
-- <x-tabs></x-tabs>
-- <data-item></data-item>
+- `<product-card></product-card>`
+- `<my-component></my-component>`
+- `<custom-input></custom-input>`
+- `<x-tabs></x-tabs>`
+- `<data-item></data-item>`
 
 ---
 
 ## Вопрос 14
 Какой из следующих JSX-фрагментов будет валиден и обеспечит корректную передачу CSS-класса?
 
-- <div class-name="container">Контент</div>
-- <div className="container">Контент</div>
-- <div styleclass="container">Контент</div>
-- <div :class="container">Контент</div>
-- <div class="container">Контент</div>
+- `<div class-name="container">Контент</div>`
+- `<div className="container">Контент</div>`
+- `<div styleclass="container">Контент</div>`
+- `<div :class="container">Контент</div>`
+- `<div class="container">Контент</div>`
 
 ---
 
@@ -218,11 +218,11 @@
 ## Вопрос 16
 Вы хотите задать блок HTML, который не будет отображаться на странице, но может быть вставлен в DOM через JavaScript. Какой тег вы используете?
 
-- <fragment>
-- <div hidden>
-- <template>
-- <noscript>
-- <slot>
+- `<fragment>`
+- `<div hidden>`
+- `<template>`
+- `<noscript>`
+- `<slot>`
 
 ---
 
@@ -238,7 +238,7 @@
 
 Какой эффект от использования этого кода при загрузке страницы?
 
-- Элементы <h2> и <p> будут доступны скринридерам
+- Элементы `<h2>` и `<p>` будут доступны скринридерам
 - Контент будет загружен, но не отрисован до вызова скрипта
 - Контент отобразится как обычно
 - Контент загрузится в скрытом Iframe
@@ -249,11 +249,11 @@
 ## Вопрос 18
 Вы хотите создать поле ввода с выпадающим списком заданных вариантов, при этом пользователь может ввести и своё значение. Какой тег нужно использовать?
 
-- <input type="text" autocomplete="off">
-- <datalist>
-- <input type="text" placeholder="А, В">
-- <output options="A,B">
-- <select>
+- `<input type="text" autocomplete="off">`
+- `<datalist>`
+- `<input type="text" placeholder="А, В">`
+- `<output options="A,B">`
+- `<select>`
 
 ---
 
@@ -303,21 +303,21 @@
 ## Вопрос 21
 Вы создаёте набор вкладок. Какой набор атрибутов и ролей обеспечит корректную доступность вкладок?
 
-- <div aria-labelledby="true">
+- `<div aria-labelledby="true">
   <div tabindex="-1">Вкладка 1</div>
-  <div>Вкладка 2</div>
-- <tabs>
+  <div>Вкладка 2</div>`
+- `<tabs>
   <tab active>Вкладка 1</tab>
-  <tab>Вкладка 2</tab>
-- <div role="tablist">
+  <tab>Вкладка 2</tab>`
+- `<div role="tablist">
   <div role="tab" aria-selected="true">Вкладка 1</div>
-  <div role="tab">Вкладка 2</div>
-- <ul role="tablist">
+  <div role="tab">Вкладка 2</div>`
+- `<ul role="tablist">
   <li role="tabitem">Вкладка 1</li>
-  <li>Вкладка 2</li>
-- <div role="tablist">
+  <li>Вкладка 2</li>`
+- `<div role="tablist">
   <div role="tab" tabindex="0" aria-selected="true">Вкладка 1</div>
-  <div role="tab" tabindex="-1">Вкладка 2</div>
+  <div role="tab" tabindex="-1">Вкладка 2</div>`
 
 ---
 
@@ -382,7 +382,7 @@
 ---
 
 ## Вопрос 25
-Почему нельзя зарегистрировать элемент с именем <panel> как Web Component?
+Почему нельзя зарегистрировать элемент с именем `<panel>` как Web Component?
 
 - Потому что имя не содержит дефиса
 - Потому что оно не начинается с custom_
@@ -393,7 +393,7 @@
 ---
 
 ## Вопрос 26
-Какой атрибут необходим для тега <option>?
+Какой атрибут необходим для тега `<option>`?
 
 - value
 - name
@@ -404,7 +404,7 @@
 ---
 
 ## Вопрос 27
-Какой селектор вы используете, чтобы применить стили только к первому дочернему элементу <p>?
+Какой селектор вы используете, чтобы применить стили только к первому дочернему элементу `<p>`?
 
 - p:first-of-type
 - p:nth-child(1)
