@@ -1,18 +1,20 @@
-## CSS_advanced
+# CSS_advanced
 
 ## Вопрос 1
-Как выбрать все \<span\>, находящиеся внутри элементов с двумя классами одновременно: .f и .g?
+Как выбрать все <span>, находящиеся внутри элементов с двумя классами одновременно: .f и .g?
 
-1 \<div class="f g"\>
-2   \<span class="x"\>Text\</span\>
-3 \</div\>
-4 \<div class="f"\>
-5   \<span class="g"\>Another\</span\>
-6 \</div\>
+```html
+<div class="f g">
+  <span class="x">Text</span>
+</div>
+<div class="f">
+  <span class="g">Another</span>
+</div>
+```
 
 - span.f.g
 - .f .g span
-- span\[class\*=".f-g"\]
+- span[class*=".f-g"]
 - .f.g span
 - f+g span
 
@@ -21,11 +23,11 @@
 ## Вопрос 2
 Как правильно переопределить только text-align для всех дочерних элементов внутри .container, при этом сохранив остальные наследуемые свойства?
 
-- .container \* { all: inherit; }
-- .container \* { text-align: initial; }
-- .container \* { text-align: inherit; }
-- .container \* { text-align: none; }
-- .container \> \* { direction: inherit; }
+- .container * { all: inherit; }
+- .container * { text-align: initial; }
+- .container * { text-align: inherit; }
+- .container * { text-align: none; }
+- .container > * { direction: inherit; }
 
 ---
 
@@ -34,7 +36,7 @@
 
 - Установить overflow: hidden;
 - Применить box-sizing: border-box;
-- Назначить margin: \-20px;
+- Назначить margin: -20px;
 - Прописать width: auto;
 - Использовать display: inline;
 
@@ -55,9 +57,9 @@
 Как повлиять на vh высоту секции, если на мобильных устройствах часть viewport скрыта (например, адресная строка)?
 
 - Использовать высоту в px и добавить overflow: auto
-- Использовать min-height: 100% к \<body\> и \<html\>
+- Использовать min-height: 100% к <body> и <html>
 - Использовать dvh вместо vh
-- Использовать calc(100vh \- 50px) без учёта видимой области
+- Использовать calc(100vh - 50px) без учёта видимой области
 - Использовать max-height: 100vh и padding: 10vh
 
 ---
@@ -90,7 +92,7 @@
 - Добавить required:after
 - Применить :not(optional)
 - Использовать ::before без content
-- Использовать ::after c content: "\*"
+- Использовать ::after c content: "*"
 - Задать outline с текстом
 
 ---
@@ -142,30 +144,34 @@
 ## Вопрос 13
 Какой из селекторов имеет наибольшую специфичность?
 
-1 \<div class="item active" id="unique"\>\</div\>
+```html
+<div class="item active" id="unique"></div>
+```
 
-- div\#unique
+- div#unique
 - div.item
 - .item.active
-- .active\#unique
-- \#unique
+- .active#unique
+- #unique
 
 ---
 
 ## Вопрос 14
 Как сделать так, чтобы изображение внутри контейнера сохраняло пропорции, заполняло весь контейнер по ширине и не выходило за его границы?
 
-1 \<style\>
-2   .container {
-3     width: 100%;
-4     max-width: 600px;
-5     aspect-ratio: 16/9;
-6     overflow: hidden;
-7   }
-8 \</style\>
-9 \<div class="container"\>
-10   \<img src="image.jpg" class="img" /\>
-11 \</div\>
+```html
+<style>
+  .container {
+    width: 100%;
+    max-width: 600px;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+  }
+</style>
+<div class="container">
+  <img src="image.jpg" class="img" />
+</div>
+```
 
 - .img { height: 100%; width: auto; object-fit: none; }
 - .img { flex: 1; min-width: 0; }
@@ -178,15 +184,17 @@
 ## Вопрос 15
 Что произойдет с .card, если ширина экрана уменьшится до 991px?
 
-1 .card {
-2   width: 1000px;
-3   transition: width 0.3s ease;
-4 }
-5 @media (max-width: 992px) {
-6   .card {
-7     width: 100%;
-8   }
-9 }
+```css
+.card {
+  width: 1000px;
+  transition: width 0.3s ease;
+}
+@media (max-width: 992px) {
+  .card {
+    width: 100%;
+  }
+}
+```
 
 - Карточка анимировано сожмется до ширины экрана
 - Карточка исчезнет
@@ -197,19 +205,21 @@
 ---
 
 ## Вопрос 16
-Как выбрать только те элементы \<p\>, которые находятся непосредственно внутри \<div class="f"\>?
+Как выбрать только те элементы <p>, которые находятся непосредственно внутри <div class="f">?
 
-1 \<div class="a"\>
-2   \<div class="b"\>
-3     \<p class="c"\>Text\</p\>
-4   \</div\>
-5   \<div class="d"\>
-6     \<p class="e"\>Text\</p\>
-7   \</div\>
-8   \<div class="f"\>
-9     \<span class="g"\>Text\</span\>
-10  \</div\>
-11 \</div\>
+```html
+<div class="a">
+  <div class="b">
+    <p class="c">Text</p>
+  </div>
+  <div class="d">
+    <p class="e">Text</p>
+  </div>
+  <div class="f">
+    <span class="g">Text</span>
+  </div>
+</div>
+```
 
 - .d p
 - .d > p
@@ -225,13 +235,13 @@
 - Добавить overflow: hidden родителю блока
 - Прописать родителю display: flex с обнулением
 - Установить vertical-align: top на блоки
-- Применить margin: \-x на элементы
+- Применить margin: -x на элементы
 - Удалить пробелы между тегами в HTML разметке
 
 ---
 
 ## Вопрос 18
-В каком случае предпочтительно использовать тег \<style\> внутри секции \<head\>?
+В каком случае предпочтительно использовать тег <style> внутри секции <head>?
 
 - Когда необходимо обеспечить максимальную производительность за счёт кэширования
 - Когда проект использует SCSS и CSS должен быть скомпилирован на лету
@@ -286,7 +296,7 @@
 ---
 
 ## Вопрос 23
-Какой селектор применяется, если элемент \<h2\> — единственный элемент такого типа внутри своего родителя, независимо от других элементов?
+Какой селектор применяется, если элемент <h2> — единственный элемент такого типа внутри своего родителя, независимо от других элементов?
 
 - h2:only-child
 - h2:only-of-type
@@ -310,10 +320,12 @@
 ## Вопрос 25
 Какой селектор будет переопределен при конфликте?
 
-`a <a href="#" class="link" id="mainLink"></a>`
+```html
+a <a href="#" class="link" id="mainLink"></a>
+```
 
 - .link#mainLink
-- \#mainLink
+- #mainLink
 - a#mainLink
 - .link
 - a.link
@@ -323,12 +335,16 @@
 ## Вопрос 26
 Какой способ позволяет задать размер шрифта, который будет адаптироваться в зависимости от ширины экрана без медиа-запросов?
 
-1 .title {
-2   font-size: ???;
-3 }
+```css
+.title {
+  font-size: ???;
+}
+```
 
 - font-size: clamp(1rem, 2vw, 2.5rem)
 - font-size: 16px
 - font-size: calc(1rem + 1px)
 - font-size: 1rem
 - font-size: var(--font-lg)
+
+---
