@@ -14,10 +14,11 @@
 **Код:**
 ```
 class ShapeCalculator {
-    public String calculate(String input) {
-        // Ваш код
-        return "0.00 0.00";
-    }
+
+  public String calculate(String input) {
+    // Ваш код
+    return "0.00 0.00";
+  }
 }
 ```
 
@@ -57,10 +58,11 @@ class ShapeCalculator {
 **Код:**
 ```
 class LogProcessor {
-    public String processLine(String line) {
-        // Ваш код
-        return "";
-    }
+
+  public String processLine(String line) {
+    // Ваш код
+    return "";
+  }
 }
 ```
 
@@ -101,10 +103,11 @@ LOG
 **Код:**
 ```
 class AgeProcessor {
-public String processEmployeeData(String input) {
-// Ваш код
-return "";
-}
+
+  public String processEmployeeData(String input) {
+    // Ваш код
+    return "";
+  }
 }
 ```
 **Пример 1:**  

@@ -38,10 +38,11 @@
 **Код:**
 ```
 class LotteryTicket {
-public String countDigits(String digits) {
-// Ваш код
-return "";
-}
+
+  public String countDigits(String digits) {
+    // Ваш код
+    return "";
+  }
 }
 ```
 
@@ -87,10 +88,13 @@ Q2:
 **Код:**
 ```
 class SalesReport {
-    public String generateReport(String salesData) {
-        // Ваш код
-        return "";
-    }
+  
+  // Ваш код
+
+  public String generateReport(String salesData) {
+    // Ваш код
+    return "";
+  }
 }
 ```
 
@@ -132,10 +136,13 @@ class SalesReport {
 **Код:**
 ```
 class StudentRating {
-    public String getStudentRating(String studentData, String courseInfo) {
-        // Ваш код
-        return "";
-    }
+  
+  // Ваш код
+
+  public String getStudentRating(String studentData, String courseInfo) {
+    // Ваш код
+    return "";
+  }
 }
 ```
 
@@ -171,13 +178,14 @@ class StudentRating {
 **Код:**
 ```
 class CaesarCipherDecoder {
-    // Русский алфавит
-    private static final String ALPHABET = "абвгдеёжзийклмнопрстуфхцчшщьыэюя";
+  
+  // Русский алфавит
+  private static final String ALPHABET = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя";
 
-    public String decode(String encryptedText, int shift) {
-        // Ваш код
-        return "";
-    }
+  public String decode(String encryptedText, int shift) {
+    // Ваш код
+    return "";
+  }
 }
 ```
 
@@ -241,64 +249,75 @@ get_users
 ```
 import java.util.ArrayList;
 import java.util.List;
-public class CommandLineProcessor {
-    private UserManager userManager = new UserManager();
 
-    /*
-     * Обработка одной строки.
-     * @param commandLine строка команды. Например: "add_user Alice 4". Другой пример: "get_users"
-     * @return вывод команды, или null если команда возвращает строку
-     */
-    public String processInput(String commandLine) {
-        // Ваш код
-        return null;
-    }
+public class CommandLineProcessor {
+  private UserManager userManager = new UserManager();
+
+  /**
+   * Обработка одной строки.
+   * @param commandLine строка команды. Например: "add_user Alice 4". Другой пример: "get_users"
+   * @return вывод команды, или null если команда возвращает строку
+   */
+  public String processInput(String commandLine) {
+    // Ваш код
+    return null;
+  }
 }
 
 class UserManager {
-    private List<User> users;
-    public UserManager() {
-        users = new ArrayList<>();
-    }
-    public UserManager addUser(String name, int accessLevel) {
-        // Ваш код
-        return this;
-    }
-    public UserManager addUser(String name) {
-        // Ваш код
-        return this;
-    }
-    public UserManager removeUser(String name) {
-        // Ваш код
-        return this;
-    }
-    public UserManager promote(String name) {
-        // Ваш код
-        return this;
-    }
-    public UserManager demote(String name) {
-        // Ваш код
-        return this;
-    }
-    public String getUsers() {
-        // Ваш код
-        return "";
-    }
+  private List<User> users;
+
+  public UserManager() {
+    users = new ArrayList<>();
+  }
+
+  public UserManager addUser(String name, int accessLevel) {
+    // Ваш код
+    return this;
+  }
+
+  public UserManager addUser(String name) {
+    // Ваш код
+    return this;
+  }
+
+  public UserManager removeUser(String name) {
+    // Ваш код
+    return this;
+  }
+
+  public UserManager promote(String name) {
+    // Ваш код
+    return this;
+  }
+
+  public UserManager demote(String name) {
+    // Ваш код
+    return this;
+  }
+
+  public String getUsers() {
+    // Ваш код
+    return "";
+  }
 }
 
 class User {
-    private String name;
-    private int accessLevel;
-    public User(String name, int accessLevel) {
-        this.name = name;
-        this.accessLevel = accessLevel;
-    }
-    public String getName() {
-        return name;
-    }
-    public int getAccessLevel() {
-        return accessLevel;
-    }
+  private String name;
+  private int accessLevel;
+
+  public User(String name, int accessLevel) {
+    this.name = name;
+    this.accessLevel = accessLevel;
+  }
+
+  public String getName() {
+    return name;
+  }
+
+  public int getAccessLevel() {
+    return accessLevel;
+  }
 }
 ```
 

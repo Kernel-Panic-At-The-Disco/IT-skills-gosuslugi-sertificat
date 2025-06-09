@@ -10,11 +10,11 @@
 
 **Код:**
 ```python
-def digital\_root(n: int) \-\> int:  
+def digital_root(n: int) -> int:
     """Ваш код"""
 
-input\_string \= input()  
-result \= digital\_root(int(input\_string))  
+input_string = input()
+result = digital_root(int(input_string))
 print(result)
 ```
 **Пример 1:** 
@@ -48,11 +48,14 @@ print(result)
 ответ является вещественным числом, округлённым до ближайших тысячных.  
 **Код:**
 ```python
-def solve\_linear\_equation(equation: str) \-\> str:  
-    """Ваш код"""
+def solve_linear_equation(equation: str) -> str:
+    "Ваш код"
 
-equation \= input()  
-solution \= solve\_linear\_equation(equation)  
+
+equation = input()
+
+solution = solve_linear_equation(equation)
+
 print(solution)
 ```
 **Пример 1:**  
@@ -164,24 +167,29 @@ user456@email.ru
 
 **Код:**
 ```python
-class Student:  
-    def \_\_init\_\_(self, name, interests):  
-        self.name \= name  
-        self.interests \= interests.split(',')
+class Student:
+    def __init__(self,name,interests):
+        self.name = name
+        self.interests = interests.split(',')
 
-class Library:  
-    def \_\_init\_\_(self):  
-        """Ваш код"""
 
-    def compile\_list(self, students: list) \-\> str:  
-        """Ваш код"""  
-        pass
+class Library:
+    def __init__(self):
+        "Ваш код"
+
+
+    def compile_list(self,student):
+        "Ваш код"
+
+
+student_data = input()
+
+book_data = input()
+
+school_library = library(book_data)
+
+print(school_library.compile_list())
 ```
-student\_data \= input()  
-book\_data \= input()
-
-school\_library \= Library()  
-print(school\_library.compile\_list(student\_data, book\_data))
 
 **Пример 1:**  
 Входные данные:  
@@ -211,3 +219,61 @@ print(school\_library.compile\_list(student\_data, book\_data))
 Игорь \- Список пуст  
 
 ---
+
+# Экстремумы
+
+**Описание:**
+Вы разрабатываете инструмент, который помогает анализировать колебания показателей — например, температуру в течение дня, уровень шума или изменения на графике акций.
+
+Иногда нужно быстро понять, где были всплески или провалы — то есть такие значения, которые заметно выше или ниже окружающих.
+
+Ваша задача — найти экстремумы: точки, которые строго больше или строго меньше n соседних значений слева и справа от него.
+
+Если у числа нет нужного числа соседей слева и справа — оно не считается экстремумом.
+
+**Формат ввода:**
+Число n соседних значений и строка, содержащая разделённые запятыми вещественные числа (0 ≤ x ≤ 10).
+
+**Формат вывода:**
+Строка формата (без кавычек):
+<тип экстремума>: <значение экстремума>, <тип экстремума>: <значение экстремума>, ...
+ИЛИ
+«Экстремумов не обнаружено.»
+
+**Код:**
+```python
+def extreme_values(data: str, number_of_neighbors: int) -> str:
+    "Ваш код"
+
+
+number_of_neighbors = input()
+
+data = input()
+
+extremes = extreme_values(data, number_of_neighbors)
+
+print(extremes)
+```
+**Пример 1:**
+Входные данные:
+2
+0.891,0.987,0.995,0.969,0.7,0.128
+
+Выходные данные:
+max: 0.995
+
+**Пример 2:**
+Входные данные:
+1
+0.73727,2.96021,3.45525,4.6169,7.17337,9.91429,2.2754,5.85553,0.938094,8.21642
+
+Выходные данные:
+max: 9.91429, min: 0.938094
+
+**Пример 3:**
+Входные данные:
+1
+0,1,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9
+
+Выходные данные:
+Экстремумов не обнаружено.

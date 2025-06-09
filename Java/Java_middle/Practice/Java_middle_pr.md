@@ -14,10 +14,11 @@
 **Код:**
 ```
 class PalindromeChecker {
-public String checkPalindrome(String input) {
-// Ваш код
-return "";
-}
+  
+  public String checkPalindrome(String input) {
+    // Ваш код
+    return "";
+  }
 }
 ```
 
@@ -51,10 +52,11 @@ return "";
 **Код:**
 ```
 class SignificantTemperatureDrop {
-public String findDrops(String input) {
-// Ваш код
-return "";
-}
+
+  public String findDrops(String input) {
+    // Ваш код
+    return "";
+  }
 }
 ```
 
@@ -95,13 +97,13 @@ return "";
 **Код:**
 ```
 class SafePasswordChecker {
-    // Набор спецсимволов
-    private static final String specialChars = "!@#$%*&()-+";
-
-    public String findSafePasswords(String input) {
-        // Ваш код
-        return "";
-    }
+  // Набор спецсимволов
+  private static final String specialChars = "!@#$%^&*()-+";
+  
+  public String findSafePasswords(String input) {
+    // Ваш код
+    return "";
+  }
 }
 ```
 
@@ -147,10 +149,11 @@ Password1 Pass@word 12345 pass!word Passw@rd
 **Код:**
 ```
 class TaskManager {
-    public String manageTasks(String input) {
-        // Ваш код
-        return "";
-    }
+  
+  public String manageTasks(String input) {
+    // Ваш код
+    return "";
+  }
 }
 ```
 
