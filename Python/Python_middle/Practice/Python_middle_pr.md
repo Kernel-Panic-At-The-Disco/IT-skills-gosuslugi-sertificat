@@ -209,3 +209,5 @@ print(school\_library.compile\_list(student\_data, book\_data))
 Выходные данные:
 
 Игорь \- Список пуст  
+
+---
