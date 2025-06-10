@@ -4,9 +4,9 @@
 
 **О чем вообще речь?**
 
-[Новость на Хабре](https://habr.com/ru/news/914910/)<br>
-[Страница сервиса на Госуслугах](https://www.gosuslugi.ru/itskills)<br>
-[Ссылка на само тестирование](https://career.hh.ru/assessment)
+<a href="https://habr.com/ru/news/914910/" target="_blank">Новость на Хабре</a><br>
+<a href="https://www.gosuslugi.ru/itskills" target="_blank">Страница на Госуслугах</a><br>
+<a href="https://career.hh.ru/assessment" target="_blank">Ссылка на тесты</a><br>
 
 Так как система при сдаче теста следит за тем, чтобы вы не переключали вкладки и не творили прочие непотребства, благодаря этим вопросам вы можете заранее подготовиться и успешно сдать тест.
 
